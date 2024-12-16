@@ -6,8 +6,20 @@ This project aims to create a Kubernetes cluster using Minikube and deploy a fun
 - [**Daniel Bruno**](https://github.com/Holeekey)
 
 ## Requirements
-- [**Minikube**](https://minikube.sigs.k8s.io/docs/start/)
-- [**Docker Desktop**](https://docs.docker.com/desktop/)
+<table style="margin: auto;">
+  <tr>
+    <td align="center" style="padding: 10px;">
+      <img src="https://repository-images.githubusercontent.com/192628331/b6a28b00-9d24-11e9-8a4a-835c1d172ad9" width="80px;" style="border-radius: 50%;" alt="Minikube"/>
+      <br />
+      <a href="https://minikube.sigs.k8s.io/docs/start/"><strong>Minikube</strong></a>
+    </td>
+    <td align="center" style="padding: 10px;">
+      <img src="https://www.docker.com/wp-content/uploads/2022/03/Moby-logo.png" width="100px;" alt="Docker Desktop"/>
+      <br />
+      <a href="https://docs.docker.com/desktop/"><strong>Docker Desktop</strong></a>
+    </td>
+  </tr>
+</table>
 
 ## Commands availables
 
