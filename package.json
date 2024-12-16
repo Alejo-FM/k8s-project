@@ -1,0 +1,15 @@
+{
+  "name": "k8s-project",
+  "version": "1.0.0",
+  "description": "project for k8s",
+  "main": "index.js",
+  "scripts": {
+    "start": "minikube start && kubectl apply -f postgres-config.yml -f postgres-secrets.yml -f postgres.yml -f pg-admin-secrets.yml -f pg-admin.yml -f backend-secrets.yml -f backend.yml",
+    "services": "minikube service pg-admin-service backend-service",
+    "service:pg-admin": "minikube service pg-admin-service",
+    "service:backend": "minikube service backend-service",
+    "delete": "minikube delete --all"
+  },
+  "author": "Dream Team",
+  "license": "ISC"
+}
