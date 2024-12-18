@@ -32,6 +32,13 @@ spec:
               key: DB_PASSWORD
         - name: PGADMIN_CONFIG_ENHANCED_COOKIE_PROTECTION
           value: "False"
+        volumeMounts:
+        - mountPath: /var/lib/pgadmin
+          name: pg-admin-storage
+      volumes:
+      - name: pg-admin-storage
+        persistentVolumeClaim:
+          claimName: pg-admin-pvc
 ---
 # *Service definition
 

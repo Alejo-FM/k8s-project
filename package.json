@@ -4,7 +4,7 @@
   "description": "project for k8s",
   "main": "index.js",
   "scripts": {
-    "start": "minikube start && kubectl apply -f ./postgres/postgres-config.yml -f ./postgres/postgres-secrets.yml -f ./postgres/postgres.yml -f ./pg-admin/pg-admin-secrets.yml -f ./pg-admin/pg-admin.yml -f ./backend/backend-secrets.yml -f ./backend/backend.yml",
+    "start": "minikube start && kubectl apply -f ./postgres/postgres-pv.yml -f ./postgres/postgres-config.yml -f ./postgres/postgres-secrets.yml -f ./postgres/postgres.yml -f ./pg-admin/pg-admin-pv.yml -f ./pg-admin/pg-admin-secrets.yml -f ./pg-admin/pg-admin.yml -f ./backend/backend-secrets.yml -f ./backend/backend.yml",
     "services": "minikube service pg-admin-service backend-service",
     "service:pg-admin": "minikube service pg-admin-service",
     "service:backend": "minikube service backend-service",
